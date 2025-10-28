@@ -1,67 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <metha charset= "utf-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale =1.0">
-    <title>Registration Form</title>
-    </head>
-    <body>
-    <h2>Registration form </h2>
-    <form action="/register"method ="POST">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
 
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="web_tech_2nd_lab.css">
+</head>
 
-     <!--name -->
-    <label for ="fullname" >Full Name :</label>
-    <input type="text" id="fullname" name="fullname "requied><br><br>
+<body>
+  <form action="/register" method="POST">
+    <h2>Registration Form</h2>
 
- <!--email -->
-    <label for="email"> Email:</label>
-    
-    <input type="email" id="email" name="email"requied><br><br>
- <!--password-->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
 
-<label for="password"> Password:</label>
-<input type="password" id="password" name="password" requied><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
 
- <!--confirmed-password-->
-<label for="confirmed-password"> Confirmed-password:</label>
-<input type="password" id="confirmed-password" name="confirmed-password" requied><br><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
 
+    <label>Gender:</label>
+    <div class="gender-group">
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="female">Female</label>
+    </div>
 
-   <!--gender  -->
-    <label for="gender "> Gender:</label>
-    
-    <input type="radio" id="male" name="male"requied><br><br>
-     <label for="male "> Male:</label>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
 
-         <input type="radio" id="female" name="female"requied><br><br>
-     <label for="female "> Female:</label>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="USA">USA</option>
+      <option value="India">India</option>
+      <option value="UK">UK</option>
+    </select>
 
+    <label class="terms">
+      <input type="checkbox" id="terms" name="terms" required>
+      I agree to the terms and conditions.
+    </label>
 
-       <!--dob  -->
-   <label for="dob"> Date Of Birth:</label>
-         <input type="date" id="dob" name="dob"requied><br><br>
-
-
-         
-       <!--country selection  -->
-   <label for="country"> Country:</label>
-         <select id="country"  name="country"required>
-            
-          <option value="Bangladesh"> Bangladesh</option>  
-  <option value="USA"> USA</option>  
-  <option value="Canada"> Canada</option>  
-  <option value="UK"> UK</option>  <br><br>
-
-       <!--confirmation  -->
-   <label for="terms">
-         <input type="checkbox" id="terms" name="terms"required>
-         i agree
-        </label><br><br>
-
-             <!--submit button -->
-   <button type="submit"> register</button>
-   </form>
-        </body>
-        </html>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
