@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ece4e4;
+    margin: 20px;
+}
+
+/* Main Form Container */
+.donation-form {
+    background: #fff;
+    width: 650px;
+    margin: 0 auto;
+    padding: 25px 35px;
+    border: 1px solid #b69c9c;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+/* Section Titles */
+h2, h3 {
+    font-weight: bold;
+    color: #8b1a1a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c89f9f;
+}
+
+/* Form Fields */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #382626;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    border: 1px solid #8a7272;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+/* Donation Amount Options */
+.donation-options {
+    margin-top: 10px;
+}
+
+.donation-options label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+/* Recurring Donation Fields */
+.recurring {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.recurring input {
+    width: 60px;
+    margin: 0 5px;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 25px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #c47b7b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="reset"] {
+    background-color: #777;
+    margin-right: 15px;
+}
+
+/* Hover effect */
+button:hover {
+    opacity: 0.85;
+}
+
+/* Footer note */
+.footer {
+    font-size: 0.85em;
+    margin-top: 20px;
+    text-align: center;
+    color: #4a3c3c;
+    padding-top: 8px;
+    border-top: 1px solid #ccbcbc;
+}
