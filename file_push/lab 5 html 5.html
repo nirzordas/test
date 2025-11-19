@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="DailyFlash - Breaking news and trending stories from around the world.">
+    <title>DailyFlash | Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(238,0,255,1);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            background-color: #444;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        nav ul li { margin: 0 15px; }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        nav ul li a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 20px auto;
+            justify-content: space-between;
+        }
+        main {
+            width: 65%;
+        }
+        article {
+            background-color: rgba(17,246,246,0.9);
+            padding: 20px;
+            margin-bottom: 20px;
+            border: inset 2px rgb(5,225,27);
+        }
+        article img { width: 100%; height: auto; margin: 10px 0; }
+        aside {
+            width: 30%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 2px inset #bbb;
+        }
+        aside ul { padding-left: 15px; }
+        aside ul li { margin-bottom: 10px; }
+        .ad-box {
+            background-color: #ddd;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        a {
+            color: rgba(11,255,44,1);
+            text-decoration: none;
+        }
+        a:hover { color: red; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DailyFlash</h1>
+    <p>Your Source for Instant News</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="world.html">World</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <main>
+        <article>
+            <h2>World Leaders Meet for Climate Summit</h2>
+            <small>November 19, 2025</small>
+            <img src="https://via.placeholder.com/600x300" alt="Climate Summit">
+            <p>Global leaders gathered today to discuss urgent measures against climate change. The summit emphasized international cooperation and emission reduction goals. Several agreements were proposed. Experts hope this could be a turning point in the climate crisis.</p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <h2>National Team Wins Championship</h2>
+            <small>November 18, 2025</small>
+            <img src="https://via.placeholder.com/600x300" alt="Sports">
+            <p>The national football team secured a historic win. Fans celebrated across the country as the team lifted the trophy. Analysts praised the players’ performance. It was a memorable night for sports lovers.</p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <h2>New Smartphone Sets Record Sales</h2>
+            <small>November 17, 2025</small>
+            <img src="https://via.placeholder.com/600x300" alt="Tech News">
+            <p>NovaCorp’s latest smartphone broke sales records within hours. Customers praised its camera system and battery life. Stores in major cities reported huge crowds. The company expects sustained demand for months.</p>
+            <a href="#">Read More</a>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Top Headlines</h3>
+        <ul>
+            <li><a href="#">Oil Prices Drop Worldwide</a></li>
+            <li><a href="#">New Health Guidelines Released</a></li>
+            <li><a href="#">Education Reforms Announced</a></li>
+            <li><a href="#">Stock Market Hits Record High</a></li>
+            <li><a href="#">Breakthrough in Medical Research</a></li>
+        </ul>
+
+        <h4>Trending</h4>
+        <ul>
+            <li><a href="#">Celebrity Launches Charity Event</a></li>
+            <li><a href="#">Major Tech Merger Finalized</a></li>
+        </ul>
+
+        <div class="ad-box">Advertisement Space</div>
+    </aside>
+</div>
+
+<footer>
+    <p>© 2025 DailyFlash | All Rights Reserved.</p>
+    <p>
+        <a href="#">Facebook</a> |
+        <a href="#">X</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
+    </p>
+</footer>
+
+</body>
+</html>
