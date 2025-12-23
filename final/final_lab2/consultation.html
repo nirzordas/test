@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Consultation</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f9fff5;
+    padding: 30px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 420px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #33691e;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background: #ffeb3b;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+</style>
+
+<script>
+function validateForm() {
+    const img = document.getElementById("image").value;
+    if (img === "") {
+        alert("Please upload an image of the disease.");
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Consult Expert</h2>
+
+<form action="consultation.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+
+    <label>Problem Description</label>
+    <textarea name="problem" rows="4" required></textarea><br><br>
+
+    <label>Upload Disease Image</label>
+    <input type="file" name="disease_image" id="image" accept="image/*" required><br><br>
+
+    <button type="submit">Submit Consultation</button>
+</form>
+
+<br>
+<button onclick="location.href='farmers_dashboard.html'">⬅ Back to Dashboard</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Crops</title>
+<style>
+body { font-family:Arial; background:#f9fff5; padding:30px; }
+.box { background:white; padding:20px; border-radius:10px; width:400px; }
+button { background:#ffeb3b; border:none; padding:10px; font-weight:bold; }
+</style>
+</head>
+
+<body>
+<div class="box">
+<h2>Upload Crops</h2>
+
+<form action="upload-crops.php" method="post">
+  Crop Name:<br>
+  <input type="text" name="crop" required><br><br>
+
+  Price:<br>
+  <input type="number" name="price" required><br><br>
+
+  Quantity:<br>
+  <input type="number" name="quantity" required><br><br>
+
+  <button type="submit">Upload</button>
+</form>
+
+<br>
+<button onclick="location.href='farmers_dashboard.html'"> Back</button>
+</div>
+</body>
+</html>
