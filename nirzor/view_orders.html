@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Orders</title>
+  <link rel="stylesheet" href="view_orders.css">
+</head>
+<body>
+
+<div class="header">
+  <span>View Orders</span>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div class="container">
+  <h2>View Orders by Farmer ID</h2>
+
+  <div class="search-box">
+    <input type="number" id="farmerId" placeholder="Enter Farmer ID">
+    <button onclick="loadOrders()">View Orders</button>
+  </div>
+
+  <div id="orders-container"></div>
+</div>
+
+<script src="view_orders.js"></script>
+</body>
+</html>

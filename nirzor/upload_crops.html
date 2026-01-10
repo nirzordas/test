@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Crops</title>
+  <link rel="stylesheet" href="upload_crops.css">
+</head>
+<body>
+
+<div class="header">
+  <span>Upload Crops</span>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div class="container">
+  <form id="cropsForm" onsubmit="event.preventDefault(); uploadCrops();">
+    <h2>Add New Crop</h2>
+
+    <input type="text" id="cropsName" placeholder="Crop Name" required>
+    <input type="number" id="price" placeholder="Price (৳)" required>
+    <input type="number" id="quantity" placeholder="Quantity (kg)" required>
+    <input type="number" id="farmerId" placeholder="Farmer ID" required>
+
+    <button type="submit" class="submit-btn">Upload Crop</button>
+  </form>
+</div>
+
+<script src="upload_crops.js"></script>
+</body>
+</html>

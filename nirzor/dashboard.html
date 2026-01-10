@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmer Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="header">
+  <span>Farmer Dashboard</span>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+  <div class="sidebar">
+    <a href="view_tools_history.html">Rent Tool History</a>
+    <a href="order_history.html">Order History</a>
+  </div>
+
+  <div class="main">
+    <h2>Welcome, Farmer</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Marketplace</h3>
+        <button onclick="location.href='marketplace.html'">Go to Marketplace</button>
+      </div>
+
+      <div class="card">
+        <h3>Upload Crops</h3>
+        <button onclick="location.href='upload_crops.html'">Upload Crops</button>
+      </div>
+
+      <div class="card">
+        <h3>View Orders</h3>
+        <button onclick="location.href='view_orders.html'">View Orders</button>
+      </div>
+
+      <div class="card">
+        <h3>Rent Tools</h3>
+        <button onclick="location.href='rent_tools.html'">Rent Tools</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

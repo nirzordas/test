@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tool Rent History</title>
+  <link rel="stylesheet" href="view_tools_history.css">
+</head>
+<body>
+
+<div class="header">
+  <span>Tool Rent History</span>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div class="container">
+  <h2>View Tool Rent History by Farmer ID</h2>
+
+  <div class="search-box">
+    <input type="number" id="farmerId" placeholder="Enter Farmer ID">
+    <button onclick="loadToolsHistory()">View History</button>
+  </div>
+
+  <div id="tools-container"></div>
+</div>
+
+<script src="view_tools_history.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent Tools</title>
+  <link rel="stylesheet" href="rent_tools.css">
+</head>
+<body>
+
+<div class="header">
+  <span>Rent Tools</span>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div class="container">
+  <h2>Available Tools</h2>
+  <div id="tools-container"></div>
+
+  <form id="rentForm" onsubmit="event.preventDefault(); rentTool();">
+    <h3>Rent a Tool</h3>
+
+    <input type="number" id="toolsId" placeholder="Tool ID" required>
+    <input type="number" id="farmerId" placeholder="Farmer ID" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+
+    <button type="submit" class="submit-btn">Rent Tool</button>
+  </form>
+</div>
+
+<script src="rent_tools.js"></script>
+</body>
+</html>

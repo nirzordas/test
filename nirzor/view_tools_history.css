@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4fff2;
+}
+
+.header {
+  background: #388e3c;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+
+.header button {
+  background: #ffeb3b;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 30px;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 220px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-left: 10px;
+  background: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tool-card {
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.tool-card p {
+  margin: 6px 0;
+  font-weight: bold;
+  color: #2e7d32;
+}
